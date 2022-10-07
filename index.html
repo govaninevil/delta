@@ -8,10 +8,97 @@
     <title>Delta</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style/style.css">
-    
+    <link href="https://www.dafontfree.net/embed/d2hpdG5leS1ib29rJmRhdGEvNTAvdy8yODgxMi9XaGl0bmV5LUJvb2sub3Rm"
+        rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
+    <header>
+        <div class="main-navbar bg-[#11172b]">
+            <div class="container mb-0 flex justify-between py-4">
+                <div class="logo-box">
+                    <a href="index.html"><img src="image/dalta-logo.svg" alt="logo.png"></a>
+                </div>
+                <div class="nav-box pl-[45px]">
+                    <ul>
+                        <li class="active"><a href="#" class="link"> BOOK </a>
+                            <div class="sub-menu">
+                                <div class="container">
+                                    <div class=" flex items-center justify-between">
+                                        <form class="book">
+                                            <label for="book-date"> Search By Date (Required) </label>
+                                            <input type="date" id="book-date" name="book-date" value="2022-10-07">
+                                        </form>
+                                        <from class="fight-number lg:w-[20%]">
+                                            <label for="quantity" class="text-[14px] pb-[8px]">Fligh Number
+                                                (Required)</label>
+                                            <input type="text" id="quantity" name="quantity" class="text-[35px] w-full"
+                                                placeholder="ex - 1210">
+                                        </from>
+                                        <p class="text-white text-[30px] font-bold">OR</p>
+                                        <div class="form-group flex w-[35%] justify-between items-center">
+                                            <form class="w-[200px]">
+                                                <label for="quantity" class="text-[14px] pb-[8px]">From Airport
+                                                    (Required)</label>
+                                                <input type="text" id="quantity" name="quantity"
+                                                    class="text-[35px] w-full" placeholder="From">
+                                            </form>
+                                            <i class="fa-solid fa-arrows-left-right text-[40px] text-[#e51937]"></i>
+                                            <form class="w-[200px]">
+                                                <label for="quantity" class="text-[14px] pb-[8px]">To Airport
+                                                    (Required)</label>
+                                                <input type="text" id="quantity" name="quantity"
+                                                    class="text-[35px] w-full" placeholder="To">
+                                            </form>
+                                        </div>
+                                        <div class="submit-btn">
+                                            <a href="#" class="p-4 bg-[#e51937] rounded-full"><i
+                                                    class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="redio flex justify-between items-center mt-5"> 
+                                        <div class="left flex items-center justify-between w-2/4 ">
+                                            <p class="text-white">SEARCH OPTION</p>
+                                            <div class="from">
+                                                <input type="radio" id="miles" name="check" value="miles">
+                                                <label for="miles" class="inline-block">Shop With Miles </label><br>
+                                            </div>
+                                            <div class="from">
+                                                <input type="radio" id="fares" name="check" value="fares">
+                                                <label for="fares" class="inline-block">Refundable Fares</label><br>
+                                            </div>
+                                            <div class="from">
+                                                <input type="radio" id="flexible" name="check" value="flexible">
+                                                <label for="flexible" class="inline-block">My dates are flexible</label>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#">Advance Search</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#" class="link"> CHECK-IN </a>
+                            <div class="submen"></div> </li>
+                        <li><a href="#" class="link"> MY TRIPS </a></li>
+                        <li><a href="#" class="link"> FLIGHT STATUS </a></li>
+                        <li><a href="#" class="link">TRavel Info</a></li>
+                        <li><a href="#" class="link">SkyMiles</a></li>
+                        <li><a href="#" class="link">Need help?</a></li>
+                    </ul>
+                </div>
+                <div class="menu-box">
+                    <a href="javascript:void(0);" title="Menu" class="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
     <div class="customer-section">
         <div class="container">
             <div class="title-box">
@@ -82,88 +169,96 @@
         </div>
     </div>
 
-    <footer>
-        <div class="container">
-            <div class="search-part">
-                <h2>Search for a topic... </h2>
-                <div class="topic-section">
-                    <div class="title">
+    <footer class="bg-[#11172b] text-white">
+        <div class="container mb-0 pb-[50px]">
+            <div class="search-part text-center pb-[60px] border-b border-[#ffffff50]">
+                <h2 class="mt-10 mb-5 text-[46px] font-samibold text-white  mx-auto inline-block">Search for a topic...
+                </h2>
+                <div class="topic-section flex items-center mx-auto justify-center">
+                    <div class="title mr-[40px] text-[#7d8388] font-bold">
                         Popular Topics:
                     </div>
-                    <a href="#">Help Center</a>
-                    <a href="#">Delta Discover Map</a>
-                    <a href="#">eCredits</a>
+                    <a href="#" class="mr-[40px]">Help Center</a>
+                    <a href="#" class="mr-[40px]">Delta Discover Map</a>
+                    <a href="#" class="mr-[40px]">eCredits</a>
                 </div>
             </div>
-            <div class="main-footer">
-                <div class="box">
-                    <div class="title">
+            <div class="main-footer flex justify-evenly">
+                <div class="box w-auto">
+                    <div class="title mt-[60px] mb-[30px] text-[#7d8388] font-bold">
                         <h3>ABOUT DELTA</h3>
                     </div>
                     <ul>
-                        <li><a href="#"></a>About Us</li>
-                        <li><a href="#"></a>Careers</li>
-                        <li><a href="#"></a>News Hub</li>
-                        <li><a href="#"></a>Investor Relations</li>
-                        <li><a href="#"></a>Business Travel</li>
-                        <li><a href="#"></a>Travel Agents</li>
-                        <li><a href="#"></a>Mobile App</li>
+                        <li class="mb-2"><a href="#"></a>About Us</li>
+                        <li class="mb-2"><a href="#"></a>Careers</li>
+                        <li class="mb-2"><a href="#"></a>News Hub</li>
+                        <li class="mb-2"><a href="#"></a>Investor Relations</li>
+                        <li class="mb-2"><a href="#"></a>Business Travel</li>
+                        <li class="mb-2"><a href="#"></a>Travel Agents</li>
+                        <li class="mb-2"><a href="#"></a>Mobile App</li>
                     </ul>
                 </div>
-                <div class="box">
-                    <div class="title">
+                <div class="box w-auto">
+                    <div class="title mt-[60px] mb-[30px] text-[#7d8388] font-bold">
                         <h3>CUSTOMER SERVICE</h3>
                     </div>
                     <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Message Us</a></li>
-                        <li><a href="#">Comment/Complaint</a></li>
+                        <li class="mb-2"><a href="#">Help Center</a></li>
+                        <li class="mb-2"><a href="#">Message Us</a></li>
+                        <li class="mb-2"><a href="#">Comment/Complaint</a></li>
                     </ul>
                 </div>
-                <div class="box">
-                    <div class="title">
+                <div class="box w-auto">
+                    <div class="title mt-[60px] mb-[30px] text-[#7d8388] font-bold">
                         <h3>SITE SUPPORT</h3>
                     </div>
                     <ul>
-                        <li><a href="#">Login Help</a></li>
-                        <li><a href="#">Site Map</a></li>
-                        <li><a href="#">Browser Compatibility</a></li>
-                        <li><a href="#">Accessibility</a></li>
-                        <li><a href="#">Booking Information</a></li>
+                        <li class="mb-2"><a href="#">Login Help</a></li>
+                        <li class="mb-2"><a href="#">Site Map</a></li>
+                        <li class="mb-2"><a href="#">Browser Compatibility</a></li>
+                        <li class="mb-2"><a href="#">Accessibility</a></li>
+                        <li class="mb-2"><a href="#">Booking Information</a></li>
                     </ul>
                 </div>
-                <div class="box">
-                    <div class="title">
+                <div class="box w-auto">
+                    <div class="title mt-[60px] mb-[30px] text-[#7d8388] font-bold">
                         POLICIES
                     </div>
                     <ul>
-                        <li><a href="#">Customer Commitment</a></li>
-                        <li><a href="#">Tarmac Delay Plan</a></li>
-                        <li><a href="#">Legal</a></li>
-                        <li><a href="#">Sustainability</a></li>
-                        <li><a href="#">Contract of Carriage</a></li>
-                        <li><a href="#">Cookies,Privacy & Security</a></li>
-                        <li><a href="#">Human Trafficking statement (PDF)</a></li>
+                        <li class="mb-2"><a href="#">Customer Commitment</a></li>
+                        <li class="mb-2"><a href="#">Tarmac Delay Plan</a></li>
+                        <li class="mb-2"><a href="#">Legal</a></li>
+                        <li class="mb-2"><a href="#">Sustainability</a></li>
+                        <li class="mb-2"><a href="#">Contract of Carriage</a></li>
+                        <li class="mb-2"><a href="#">Cookies,Privacy & Security</a></li>
+                        <li class="mb-2"><a href="#">Human Trafficking statement (PDF)</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-info">
-                <p>© 2022 Delta Air Lines, Inc.<span>|</span>Travel may be on other airlines.</p>
-                <p>Terms and conditions apply to all offers and SkyMiles benefits. See specific offer for details, and visit <a href="#">SkyMiles Membership Guide & Program Rules</a></p>
+            <div class="footer-info pt-[40px]">
+                <p class="text-center mb-4 text-[#7d8388] text-[12px]">© 2022 Delta Air Lines, Inc.<span
+                        class="mx-[20px]">|</span>Travel may be on other airlines.</p>
+                <p class="text-center mb-4 text-[#7d8388] text-[12px]">Terms and conditions apply to all offers and
+                    SkyMiles benefits. See specific offer for details, and visit <a href="#" class="text-white">SkyMiles
+                        Membership Guide & Program Rules</a></p>
             </div>
             <div class="footer-social">
-                <div class="title">
+                <div class="title text-center mb-4">
                     <h2>Website Feedback</h2>
                 </div>
-                <div class="social">
-                    <div class="inner-box">
-                        <a href="#"><img src="image/Facebook-icon.svg" alt="facebook"></a>
-                        <a href="#"><img src="image/Twitter-icon.svg" alt="twitter"></a>
+                <div class="social text-center">
+                    <div class="inner-box inline-block ">
+                        <a href="#" class="inline-block mr-4"><img src="image/Facebook-icon.svg" alt="facebook"></a>
+                        <a href="#" class="inline-block"><img src="image/Twitter-icon.svg" alt="twitter"></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="script/script.js"></script>
+    <script src="https://kit.fontawesome.com/884533464b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

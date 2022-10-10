@@ -18,7 +18,7 @@ p {
 }
 
 .container {
-    width: 1180px;
+    max-width: 1180px !important;
     margin: 0 auto;
     margin-bottom: 50px;
 }
@@ -38,7 +38,7 @@ header .main-header a:hover {color:#FFC425 ;}
     justify-content: space-between;
 }
 .main-navbar .nav-box ul li:not(:last-child){margin-right: 20px;}
-.main-navbar .nav-box ul li select{border: none;background: none;}
+.main-navbar .nav-box ul li select{border: none;}
 .main-navbar .nav-box ul li a{font-weight: 400;font-size: 18px;line-height: 20px;color: #ffffff;}
 .main-navbar .nav-box ul li.active .link{color: #e51937 !important;}
 .menu-box{display: none;}
@@ -79,7 +79,7 @@ input {
     font-size: 13px;
 }
 .book input{
-    font-size: 40px;
+    font-size: 30px;
 }
 .nav-box li.active .sub-menu{
     display: block !important;

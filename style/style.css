@@ -12,7 +12,11 @@ h5,
 h6 {
     margin: 0px;
 }
-
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
 p {
     font-size: 15px;
 }
@@ -38,7 +42,7 @@ header .main-header a:hover {color:#FFC425 ;}
     justify-content: space-between;
 }
 .main-navbar .nav-box ul li:not(:last-child){margin-right: 20px;}
-.main-navbar .nav-box ul li select{border: none;}
+/* .main-navbar .nav-box ul li select{border: none;} */
 .main-navbar .nav-box ul li a{font-weight: 400;font-size: 18px;line-height: 20px;color: #ffffff;}
 .main-navbar .nav-box ul li.active .link{color: #e51937 !important;}
 .menu-box{display: none;}
@@ -79,7 +83,7 @@ input {
     font-size: 13px;
 }
 .book input{
-    font-size: 30px;
+    font-size: 25px;
 }
 .nav-box li.active .sub-menu{
     display: block !important;

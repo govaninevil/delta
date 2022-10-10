@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link href="https://www.dafontfree.net/embed/d2hpdG5leS1ib29rJmRhdGEvNTAvdy8yODgxMi9XaGl0bmV5LUJvb2sub3Rm"
         rel="stylesheet" type="text/css" />
+        <link href="https://www.dafontfree.net/embed/d2hpdG5leS1saWdodC1yZWd1bGFyJmRhdGEvNDYvdy82MzY1Mi9XaGl0bmV5LUxpZ2h0LnR0Zg" rel="stylesheet" type="text/css"/>
 
 </head>
 
@@ -25,44 +26,62 @@
                         <li class="active"><a href="#" class="link"> BOOK </a>
                             <div class="sub-menu">
                                 <div class="container">
-                                    <div class="box a">
-                                        <form class="from">
-                                            <input type="text" id="from" name="from" placeholder="From">
-                                            <label for="from">Your Origin</label>
-                                        </form>
-                                        <from class="to">
-                                            <input type="text" id="destination" name="to" placeholder="To">
-                                            <label for="destination">Your Destination</label>
-                                        </from>
-                                    </div>
-                                    <div class="box b">
-                                        <select name="tirp" id="trip">
-                                            <option value="round-trip">
-                                                Round Trip
-                                            </option>
-                                            <option value="oneway">
-                                                One Way
-                                            </option>
-                                            <option value="multi-city">
-                                                Multi-City
-                                            </option>
-                                        </select>
-                                    </div>
-                                    <div class="box c">
-                                        <div class=""
-                                    </div>
-                                    <div class="box d">
-                                        <select name="passenger" id="passenger">
-                                            <option value="1">1 Passenger</option>
-                                            <option value="2">2 Passengers</option>
-                                            <option value="3">3 Passengers</option>
-                                            <option value="4">4 Passengers</option>
-                                            <option value="5">5 Passengers</option>
-                                            <option value="6">6 Passengers</option>
-                                            <option value="7">7 Passengers</option>
-                                            <option value="8">8 Passengers</option>
-                                            <option value="9">9 Passengers</option>
-                                        </select>
+                                    <div class="inner-box flex items-center justify-between">
+                                        <div class="box a flex items-center">
+                                            <form class="from">
+                                                <input type="text" id="from" name="from" placeholder="From" class="text-[56px] w-[130px] border-none" style="font-family: 'whitney-light-regular', sans-serif;">
+                                                <label for="from" class="text-xs text-center">Your Origin</label>
+                                            </form>
+                                            <div class="arrow">
+                                                <i class="fa-solid fa-arrows-left-right text-[#df1e33] text-[60px] mx-[20px]"></i>
+                                            </div>
+                                            <from class="to">
+                                                <input type="text" id="destination" name="to" placeholder="To" class="text-[56px] w-[100px] border-none text-center">
+                                                <label for="destination" class="text-xs text-center">Your Destination</label>
+                                            </from>
+                                        </div>
+                                        <div class="box b">
+                                            <select name="tirp" id="trip" class="text-[24px] bg-[#11172b] text-white pr-[20px] ml-[10px] border-b border-[#ffffff50] pb-[8px] mt-[28px]">
+                                                <option value="round-trip">
+                                                    Round Trip
+                                                </option>
+                                                <option value="oneway">
+                                                    One Way
+                                                </option>
+                                                <option value="multi-city">
+                                                    Multi-City
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="box c">
+                                            <div class="date flex items-center">
+                                                <form class="book w-[41%] mr-[25px]">
+                                                    <label for="Depart"> Depart </label>
+                                                    <input type="date" id="Depart" name="Depart" class="w-full">
+                                                </form>
+                                                <form class="book w-[41%]">
+                                                    <label for="Return"> Return </label>
+                                                    <input type="date" id="return" name="Return" class="w-full">
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="box d">
+                                            <select name="passenger" id="passenger" class="text-[24px] bg-[#11172b] text-white w-[90%] border-b border-[#ffffff50] pb-[8px] mt-[30px]">
+                                                <option value="1">1 Passenger</option>
+                                                <option value="2">2 Passengers</option>
+                                                <option value="3">3 Passengers</option>
+                                                <option value="4">4 Passengers</option>
+                                                <option value="5">5 Passengers</option>
+                                                <option value="6">6 Passengers</option>
+                                                <option value="7">7 Passengers</option>
+                                                <option value="8">8 Passengers</option>
+                                                <option value="9">9 Passengers</option>
+                                            </select>
+                                        </div>
+                                        <div class="btn">
+                                            <a href="#" class="p-4 bg-[#e51937] rounded-full"><i
+                                                    class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -73,40 +92,44 @@
                                     <from>
                                         <div>
                                             <from class="flex items-center">
-                                                <select name="cars" id="cars" class="text-white bg-[#11172b] text-[23px] mr-[50px]">
-                                                    <option value="confermation-number" selected>Conformation Number</option>
+                                                <select name="cars" id="cars"
+                                                    class="text-white bg-[#11172b] text-[23px] mr-[50px]">
+                                                    <option value="confermation-number" selected>Conformation Number
+                                                    </option>
                                                     <option value="Card-number">Credit/Debit Card Number</option>
                                                     <option value="ticket-number">Ticket Number</option>
                                                 </select>
                                                 <div class="confermation-number hidden w-[57%]">
-                                                    <label for="quantity" class="text-[14px] pb-[8px]">Conformation Number
-                                                    (Required)</label>
-                                                    <input type="text" id="quantity" name="quantity" class="text-[30px] w-[85%]"
-                                                    placeholder="ex. SFTORB">
+                                                    <label for="quantity" class="text-[14px] pb-[8px]">Conformation
+                                                        Number
+                                                        (Required)</label>
+                                                    <input type="text" id="quantity" name="quantity"
+                                                        class="text-[30px] w-[85%]" placeholder="ex. SFTORB">
                                                 </div>
                                                 <div class="card-number hidden w-[57%]">
-                                                    <label for="quantity" class="text-[14px] pb-[8px]">Credit/Debit Card Number
+                                                    <label for="quantity" class="text-[14px] pb-[8px]">Credit/Debit Card
+                                                        Number
                                                         (Required)</label>
-                                                    <input type="text" id="quantity" name="quantity" class="text-[30px] w-[85%]"
-                                                        placeholder="ex. 1234123412341234">
+                                                    <input type="text" id="quantity" name="quantity"
+                                                        class="text-[30px] w-[85%]" placeholder="ex. 1234123412341234">
                                                 </div>
                                                 <div class="ticket-number hidden w-[57%]">
                                                     <label for="quantity" class="text-[14px] pb-[8px]">Ticket Number
                                                         (Required)</label>
-                                                    <input type="text" id="quantity" name="quantity" class="text-[30px] w-[85%]"
-                                                        placeholder="ex. 0062112549881">
+                                                    <input type="text" id="quantity" name="quantity"
+                                                        class="text-[30px] w-[85%]" placeholder="ex. 0062112549881">
                                                 </div>
                                                 <div>
-                                                <label for="quantity" class="text-[14px] pb-[8px]">Frist Name
-                                                     (Required)</label>
-                                                <input type="text" id="quantity" name="quantity" class="text-[30px] w-3/4"
-                                                    placeholder="Frist Name">
+                                                    <label for="quantity" class="text-[14px] pb-[8px]">Frist Name
+                                                        (Required)</label>
+                                                    <input type="text" id="quantity" name="quantity"
+                                                        class="text-[30px] w-3/4" placeholder="Frist Name">
                                                 </div>
                                                 <div>
-                                                <label for="quantity" class="text-[14px] pb-[8px]">Last Name
-                                                    (Required)</label>
-                                                <input type="text" id="quantity" name="quantity" class="text-[30px] w-3/4"
-                                                    placeholder="Last Name">
+                                                    <label for="quantity" class="text-[14px] pb-[8px]">Last Name
+                                                        (Required)</label>
+                                                    <input type="text" id="quantity" name="quantity"
+                                                        class="text-[30px] w-3/4" placeholder="Last Name">
                                                 </div>
                                                 <div class="btn">
                                                     <a href="#" class="p-4 bg-[#e51937] rounded-full"><i
@@ -122,16 +145,17 @@
                             <div class="sub-menu">
                                 <div class="container">
                                     <from class="flex items-center">
-                                        <select name="cars" id="cars" class="text-white bg-[#11172b] text-[23px] mr-[50px]">
+                                        <select name="cars" id="cars"
+                                            class="text-white bg-[#11172b] text-[23px] mr-[50px]">
                                             <option value="confermation-number" selected>Conformation Number</option>
                                             <option value="Card-number">Credit/Debit Card Number</option>
                                             <option value="ticket-number">Ticket Number</option>
                                         </select>
                                         <div class="confermation-number hidden w-[57%]">
                                             <label for="quantity" class="text-[14px] pb-[8px]">Conformation Number
-                                            (Required)</label>
+                                                (Required)</label>
                                             <input type="text" id="quantity" name="quantity" class="text-[30px] w-[85%]"
-                                            placeholder="ex. SFTORB">
+                                                placeholder="ex. SFTORB">
                                         </div>
                                         <div class="card-number hidden w-[57%]">
                                             <label for="quantity" class="text-[14px] pb-[8px]">Credit/Debit Card Number
@@ -146,16 +170,16 @@
                                                 placeholder="ex. 0062112549881">
                                         </div>
                                         <div>
-                                        <label for="quantity" class="text-[14px] pb-[8px]">Frist Name
-                                             (Required)</label>
-                                        <input type="text" id="quantity" name="quantity" class="text-[30px] w-3/4"
-                                            placeholder="Frist Name">
+                                            <label for="quantity" class="text-[14px] pb-[8px]">Frist Name
+                                                (Required)</label>
+                                            <input type="text" id="quantity" name="quantity" class="text-[30px] w-3/4"
+                                                placeholder="Frist Name">
                                         </div>
                                         <div>
-                                        <label for="quantity" class="text-[14px] pb-[8px]">Last Name
-                                            (Required)</label>
-                                        <input type="text" id="quantity" name="quantity" class="text-[30px] w-3/4"
-                                            placeholder="Last Name">
+                                            <label for="quantity" class="text-[14px] pb-[8px]">Last Name
+                                                (Required)</label>
+                                            <input type="text" id="quantity" name="quantity" class="text-[30px] w-3/4"
+                                                placeholder="Last Name">
                                         </div>
                                         <div class="btn">
                                             <a href="#" class="p-4 bg-[#e51937] rounded-full"><i

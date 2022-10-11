@@ -23,25 +23,25 @@
                 </div>
                 <div class="nav-box pl-[45px]">
                     <ul>
-                        <li class="active"><a href="#" class="link"> BOOK </a>
+                        <li class=""><a href="#" class="link"> BOOK </a>
                             <div class="sub-menu">
                                 <div class="container">
                                     <div class="inner-box flex items-center justify-between">
                                         <div class="box a flex items-center">
                                             <form class="from">
-                                                <input type="text" id="from" name="from" placeholder="From" class="text-[56px] w-[130px] border-none" style="font-family: 'whitney-light-regular', sans-serif;">
+                                                <input type="text" id="from" name="from" placeholder="From" class="text-[56px] w-[130px] border-none font-light">
                                                 <label for="from" class="text-xs text-center">Your Origin</label>
                                             </form>
                                             <div class="arrow">
                                                 <i class="fa-solid fa-arrows-left-right text-[#df1e33] text-[60px] mx-[20px]"></i>
                                             </div>
                                             <from class="to">
-                                                <input type="text" id="destination" name="to" placeholder="To" class="text-[56px] w-[100px] border-none text-center">
+                                                <input type="text" id="destination" name="to" placeholder="To" class="text-[56px] w-[100px] border-none text-center font-light">
                                                 <label for="destination" class="text-xs text-center">Your Destination</label>
                                             </from>
                                         </div>
                                         <div class="box b">
-                                            <select name="tirp" id="trip" class="text-[24px] bg-[#11172b] text-white pr-[20px] ml-[10px] border-b border-[#ffffff50] pb-[8px] mt-[28px]">
+                                            <select name="tirp" id="trip" class="text-[24px] bg-[#11172b] text-white pr-[20px] ml-[10px] border-b border-[#ffffff50] pb-[8px] mt-[28px] font-light">
                                                 <option value="round-trip">
                                                     Round Trip
                                                 </option>
@@ -55,18 +55,18 @@
                                         </div>
                                         <div class="box c">
                                             <div class="date flex items-center">
-                                                <form class="book w-[41%] mr-[25px]">
+                                                <form class="book xl:w-[41%] mr-[25px]">
                                                     <label for="Depart"> Depart </label>
-                                                    <input type="date" id="Depart" name="Depart" class="w-full">
+                                                    <input type="date" id="Depart" name="Depart" class="w-full font-light">
                                                 </form>
-                                                <form class="book w-[41%]">
+                                                <form class="book xl:w-[41%]">
                                                     <label for="Return"> Return </label>
-                                                    <input type="date" id="return" name="Return" class="w-full">
+                                                    <input type="date" id="return" name="Return" class="w-full font-light">
                                                 </form>
                                             </div>
                                         </div>
                                         <div class="box d">
-                                            <select name="passenger" id="passenger" class="text-[24px] bg-[#11172b] text-white w-[90%] border-b border-[#ffffff50] pb-[8px] mt-[30px]">
+                                            <select name="passenger" id="passenger" class="text-[24px] bg-[#11172b] text-white w-[90%] border-b border-[#ffffff50] pb-[8px] mt-[30px] font-light w-min xl:w-auto">
                                                 <option value="1">1 Passenger</option>
                                                 <option value="2">2 Passengers</option>
                                                 <option value="3">3 Passengers</option>
@@ -78,9 +78,29 @@
                                                 <option value="9">9 Passengers</option>
                                             </select>
                                         </div>
-                                        <div class="btn">
+                                        <div class="btn mt-3 xl:mt-0">
                                             <a href="#" class="p-4 bg-[#e51937] rounded-full"><i
                                                     class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="redio flex justify-between items-center mt-5"> 
+                                        <div class="left flex items-center justify-between w-full lg:w-[60%] ">
+                                            <p class="text-white -mt-[3px]">SEARCH OPTION</p>
+                                            <div class="from">
+                                                <input type="checkbox" id="miles" name="check" value="miles" class="w-[20px] h-[20px] mr-[10px]">
+                                                <label for="miles" class="inline-block align-text-bottom">Shop With Miles </label><br>
+                                            </div>
+                                            <div class="from">
+                                                <input type="checkbox" id="fares" name="check" value="fares" class="w-[20px] h-[20px] mr-[10px]">
+                                                <label for="fares" class="inline-block align-text-bottom">Refundable Fares</label><br>
+                                            </div>
+                                            <div class="from">
+                                                <input type="checkbox" id="flexible" name="check" value="flexible" class="w-[20px] h-[20px] mr-[10px]">
+                                                <label for="flexible" class="inline-block align-text-bottom">My dates are flexible</label>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#">Advance Search</a>
                                         </div>
                                     </div>
                                 </div>
@@ -225,26 +245,7 @@
                                                     class="fa-solid fa-arrow-right"></i></a>
                                         </div>
                                     </div>
-                                    <!-- <div class="redio flex justify-between items-center mt-5"> 
-                                        <div class="left flex items-center justify-between w-2/4 ">
-                                            <p class="text-white">SEARCH OPTION</p>
-                                            <div class="from">
-                                                <input type="radio" id="miles" name="check" value="miles">
-                                                <label for="miles" class="inline-block">Shop With Miles </label><br>
-                                            </div>
-                                            <div class="from">
-                                                <input type="radio" id="fares" name="check" value="fares">
-                                                <label for="fares" class="inline-block">Refundable Fares</label><br>
-                                            </div>
-                                            <div class="from">
-                                                <input type="radio" id="flexible" name="check" value="flexible">
-                                                <label for="flexible" class="inline-block">My dates are flexible</label>
-                                            </div>
-                                        </div>
-                                        <div class="right">
-                                            <a href="#">Advance Search</a>
-                                        </div>
-                                    </div> -->
+                                    
                                 </div>
                             </div>
                         </li>
@@ -263,6 +264,50 @@
             </div>
         </div>
     </header>
+    <div class="banner-section relative">
+        <div class="container">
+            <div class="inner-box absolute top-[40%] w-[35%] ">
+                <div class="cotant">
+                    <h1 class="text-[52px] font-bold text-white ">TRAVELING THE WORLD JUST GOT EASIER</h1>
+                    <p class="text-xl my-[20px] text-white mb-[40px]">COVID-19 testing is no longer required for customers entering the U.S.
+                        Foreign nationals must still be fully vaccinated to enter.</p>
+                    <a href="#" class="px-[20px] py-[10px] bg-[#df1e33] inlineblock text-xl font-bold text-white    ">SEE DETAILS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="deals bg-[#11172b]">
+        <div class="container">
+            <div class="inner-box flex items-center   text-white w-full">
+                <div class="main-box flex items-center justify-between w-[58%] gap-[16px] py-[35px]">
+                    <div class="deal-box flex items-center justify-between">
+                        <i class="fa-solid fa-mountain-city text-xl text-[#ffffff50] mr-3" ></i>
+                        <a href="#" class="text-base mr-3">VACATION DEALS</a>
+                        <i class="fa-solid fa-angle-right text-[#ffffff50]"></i>
+                    </div>
+                    <div class="deal-box flex items-center justify-between">
+                        <i class="fa-solid fa-bed text-xl text-[#ffffff50] mr-3"></i>
+                        <a href="#" class="text-base mr-3">SHOP HOTELS</a>
+                        <i class="fa-solid fa-angle-right text-[#ffffff50]"></i>
+                    </div>
+                    <div class="deal-box flex items-center justify-between">
+                        <i class="fa-solid fa-car text-xl text-[#ffffff50] mr-3"></i>
+                        <a href="#" class="text-base mr-3">RENT A CAR</a>
+                        <i class="fa-solid fa-angle-right text-[#ffffff50]"></i>
+                    </div>
+                    <div class="deal-box flex items-center justify-between">
+                        <i class="fa-solid fa-credit-card text-xl text-[#ffffff50] mr-3"></i>
+                        <a href="#" class="text-base mr-3">GIFT CARDS</a>
+                        <i class="fa-solid fa-angle-right text-[#ffffff50]"></i>
+                    </div>
+                </div>
+                <div class="update-box pl-12 py-[35px] border-l border-[#ffffff50]">
+                    <a href="#" class="mr-6">Updated Beg & Travel Fees</a>  
+                    <i class="fa-solid fa-angle-right text-[#ffffff50]"></i>                  
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="customer-section">
         <div class="container">
             <div class="title-box">

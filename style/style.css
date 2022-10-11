@@ -1,7 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@font-face {
+    font-family: 'Whitney';
+    src: url('../font/Whitney-Bold.eot');
+    src: url('../font/Whitney-Book.eot?#iefix') format('embedded-opentype'),
+        url('../font/Whitney-Book.woff2') format('woff2'),
+        url('../font/Whitney-Book.woff') format('woff'),
+        url('../font/Whitney-Book.ttf') format('truetype'),
+        url('../font/Whitney-Book.svg#Whitney-Book') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Whitney';
+    src: url('../font/Whitney-Light.eot');
+    src: url('../font/Whitney-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font/Whitney-Light.woff2') format('woff2'),
+        url('../font/Whitney-Light.woff') format('woff'),
+        url('../font/Whitney-Light.ttf') format('truetype'),
+        url('../font/Whitney-Light.svg#Whitney-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Whitney';
+    src: url('../font/Whitney-Bold.eot');
+    src: url('../font/Whitney-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Whitney-Bold.woff2') format('woff2'),
+        url('../font/Whitney-Bold.woff') format('woff'),
+        url('../font/Whitney-Bold.ttf') format('truetype'),
+        url('../font/Whitney-Bold.svg#Whitney-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Whitney';
+    src: url('../font/Whitney-Semibold.eot');
+    src: url('../font/Whitney-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Whitney-Semibold.woff2') format('woff2'),
+        url('../font/Whitney-Semibold.woff') format('woff'),
+        url('../font/Whitney-Semibold.ttf') format('truetype'),
+        url('../font/Whitney-Semibold.svg#Whitney-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Whitney';
+    src: url('../font/Whitney-Medium.eot');
+    src: url('../font/Whitney-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/Whitney-Medium.woff2') format('woff2'),
+        url('../font/Whitney-Medium.woff') format('woff'),
+        url('../font/Whitney-Medium.ttf') format('truetype'),
+        url('../font/Whitney-Medium.svg#Whitney-Medium') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 * {
-    font-family: 'whitney-book', sans-serif;
+    font-family: 'Whitney';
 }
 
 h1,
@@ -41,6 +106,10 @@ header .main-header a:hover {color:#FFC425 ;}
     display: flex;
     justify-content: space-between;
 }
+input:focus-visible{
+    border: none !important;
+    outline: none !important;
+}
 .main-navbar .nav-box ul li:not(:last-child){margin-right: 20px;}
 /* .main-navbar .nav-box ul li select{border: none;} */
 .main-navbar .nav-box ul li a{font-weight: 400;font-size: 18px;line-height: 20px;color: #ffffff;}
@@ -59,10 +128,11 @@ header .main-header a:hover {color:#FFC425 ;}
     top: 77px;
     left: 0px;
     width: 100%;
-    height: 200px;
+    height: 220px;
     background: #11172b;
     text-align: left;
     padding-top: 50px;
+    z-index: 1;
 }
 form{
     display: inline-block;
@@ -81,9 +151,13 @@ input {
 }
 .book label{
     font-size: 13px;
+    margin-bottom: 6px;    
 }
 .book input{
     font-size: 25px;
+}
+.deals .inner-box{
+    justify-content: space-between !important;
 }
 .nav-box li.active .sub-menu{
     display: block !important;
@@ -96,7 +170,13 @@ input {
 .title-box p {
     font-size: 18px;
 }
-
+.banner-section{
+    background-image: url('../image/banner-img.jpg');
+    height: 720px;
+    background-size: cover;
+    background-position-y: 100%;
+    background-size: cover;;
+}
 .destination-box {
     display: flex;
     align-items: center;
@@ -199,6 +279,9 @@ hr {
 @media screen and (max-width:1365px) {
 	.header{position: absolute;top: 0px;left: 0px;width: 100%;background: #ffffff;}
     .main-navbar .container{display: block !important;}
+    .main-navbar{
+        overflow: scroll;
+    }
 	.menu-open{overflow: hidden;height: 100vh;}
 	.menu-box{display: block;}
 	.menu-box span{display: block;width: 40px; height:2px;background-color: #000000;margin-bottom: 4px;}
@@ -212,8 +295,129 @@ hr {
 	.menu-open .nav-box{display: block !important;height: 100vh;}
 	.menu-open .nav-box ul{margin-top: 40px !important;}
 	.menu-open .nav-box ul li{width: 100%;display: block;margin-bottom: 20px;text-align: left;}
+    .nav-box li.active .sub-menu{position: static;}
     .cart-box{
         display: none !important;
+    }
+    .banner-section .inner-box{
+        top: 15%;    
+    }
+    .banner-section{
+        height: 600px;        
+    }
+}
+@media (max-width: 1245px) {
+    .nav-box li.active .sub-menu .inner-box{
+        flex-wrap: wrap !important;
+    }
+    .nav-box li.active .sub-menu .inner-box .btn a{
+        display: inline-block;
+    }
+    .nav-box li.active .sub-menu .inner-box .box-b,.nav-box li.active .sub-menu .inner-box .box-c,.nav-box li.active .sub-menu .inner-box .box-d{
+        width: 40% !important;
+    }
+    .nav-box li.active .sub-menu .inner-box .box-b form,.nav-box li.active .sub-menu .inner-box .box-c form,.nav-box li.active .sub-menu .inner-box .box-d form{
+        width: auto !important;
+    }
+    .sub-menu{
+        padding-top: 0px;
+    }
+    
+}
+@media (max-width: 1024px){
+    .redio{
+        display: block !important;        
+    }
+    .redio .left{
+        width: 100% !important;
+    }
+    .banner-section{
+        background-position-x: -270px;
+    }
+    .banner-section .inner-box{
+        width: 57% !important;
+    }
+}
+@media (max-width: 767px) {
+    .main-footer{
+        flex-wrap: wrap;
+        text-align: center;        
+    }
+    .main-footer .title{
+        margin: 10px 0px;
+    }
+    .nav-box{
+        padding-left: 0px;
+    }
+    .main-footer .box{
+        width: 50% !important;
+    }    
+    .banner-section .inner-box {
+        width: 100% !important;
+        top: 5%;
+    }
+    .deals .inner-box{
+        display: block;
+        padding-bottom: 20px;
+    }
+    .deals .inner-box .main-box{
+        display: block;
+        margin: 0px auto;
+        padding: 20px 0px;
+    }
+    .deals .inner-box .main-box .deal-box{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .update-box{
+        padding: 0px !important;
+        text-align: center;
+        
+    }
+    .sub-menu .inner-box{
+        display: block;
+    }
+    .sub-menu .box {
+        margin: 10px;
+        width: min-content;
+    }
+    .box.c .date{
+        display: block;
+    }
+    .box.a{
+        display: block;
+        text-align: center;
+        width: 45%;
+    }
+    .box.a input{
+        width: 100%;
+        text-align: center;
+    }
+    .arrow i{
+        transform: rotate(90deg);
+    }
+    .search-part{
+        padding-bottom: 20px;
+    }
+    .search-box h2{
+        font-size: 20px;
+    }
+    .topic-section{
+        display: block;
+        text-align: center;
+    }
+    .topic-section a{
+        width: 100%;
+        margin: 10px 0px;
+        text-align: center;
+    }
+}
+@media (max-width: 500px) {
+    .main-footer .box{
+        width: 100% !important;
+    }
+    .topic-section{
+        flex-wrap: wrap;
     }
 }
 @media (max-width: 650px) {
@@ -225,4 +429,39 @@ hr {
 	.main-navbar{padding-top: 15px;}
 	.menu-box{top: 18px;right: 36px;}
     .main-navbar .logo-box{width: 33%;}
+}
+@media screen and (max-width:400px){
+    .banner-section {
+        height: 460px;
+    }
+    .cotant{
+        padding-left: 10px;
+    }
+    .cotant h1{
+        font-size: 40px !important;
+    }
+    .sub-menu .box{
+        width: 100%;
+    }
+    .sub-menu .box input, 
+    .sub-menu .box select,
+    .sub-menu .box form
+    {
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    } 
+    .sub-menu .btn{
+        text-align: center;
+    } 
+    .redio .left{
+        display: block;
+        text-align: center;
+    }
+    .redio .left p,.redio .left .from{
+        margin: 10px 0px;
+    }
+    .redio .right{
+        text-align: center;
+    } 
 }

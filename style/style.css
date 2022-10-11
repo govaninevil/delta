@@ -82,6 +82,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
 }
+select:focus-visible{
+    outline: none;
+}
 p {
     font-size: 15px;
 }
@@ -171,11 +174,21 @@ input {
     font-size: 18px;
 }
 .banner-section{
-    background-image: url('../image/banner-img.jpg');
+    background-image: url('../image/banner-img.webp');
     height: 720px;
     background-size: cover;
-    background-position-y: 100%;
-    background-size: cover;;
+    background-position-y: -100%;
+    background-size: cover;
+    position: relative;
+}
+.banner-section:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    top: 0px;
+    left: 0px;
 }
 .destination-box {
     display: flex;
@@ -295,12 +308,13 @@ hr {
 	.menu-open .nav-box{display: block !important;height: 100vh;}
 	.menu-open .nav-box ul{margin-top: 40px !important;}
 	.menu-open .nav-box ul li{width: 100%;display: block;margin-bottom: 20px;text-align: left;}
-    .nav-box li.active .sub-menu{position: static;}
+    .nav-box li.active .sub-menu{position: static; margin-bottom: 100px;}
     .cart-box{
         display: none !important;
     }
     .banner-section .inner-box{
-        top: 15%;    
+        top: 15%; 
+        left: 30px;   
     }
     .banner-section{
         height: 600px;        
@@ -321,6 +335,7 @@ hr {
     }
     .sub-menu{
         padding-top: 0px;
+        height: max-content;
     }
     
 }
@@ -336,6 +351,13 @@ hr {
     }
     .banner-section .inner-box{
         width: 57% !important;
+    }
+    .hotel-form{
+        display: block !important;
+    }
+    .sub-menu .container form input{
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
 @media (max-width: 767px) {
@@ -353,7 +375,7 @@ hr {
         width: 50% !important;
     }    
     .banner-section .inner-box {
-        width: 100% !important;
+        width: 90% !important;
         top: 5%;
     }
     .deals .inner-box{
@@ -379,22 +401,19 @@ hr {
     }
     .sub-menu .box {
         margin: 10px;
-        width: min-content;
     }
     .box.c .date{
         display: block;
     }
-    .box.a{
-        display: block;
-        text-align: center;
-        width: 45%;
+    .hotel-form{
+        margin-top: 20px !important;
     }
     .box.a input{
         width: 100%;
         text-align: center;
     }
-    .arrow i{
-        transform: rotate(90deg);
+    .box.b select{
+        margin-left: 0px;
     }
     .search-part{
         padding-bottom: 20px;
@@ -410,6 +429,9 @@ hr {
         width: 100%;
         margin: 10px 0px;
         text-align: center;
+    }
+    .menu-box{
+        right: 40px;
     }
 }
 @media (max-width: 500px) {
